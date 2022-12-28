@@ -1,4 +1,16 @@
 # Deckpad
+## What is Deckpad?
+
+Deckpad allows you to use your SteamDeck as a gamepad on your Windows PC.
+
+Once setup, all you have to do is to launch **Deckpad**, enter your password, and it will:
+
+* Connect automatically to your Windows PC and act as a gamepad
+   * You can use all the Steam input config you already configured on the SteamDeck
+* Reduce the brightness to the minimum
+   * Also prevents Steam from raising it while the app is running
+* Disable sleep mode while the app is running
+* Show the live battery percentage
 
 ## Setup Instructions
 ### On Steam Deck
