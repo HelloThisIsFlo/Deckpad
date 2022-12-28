@@ -32,7 +32,7 @@
     | Launch Opts | `-u LD_PRELOAD konsole -e “./deckpad.sh”` |
     - and this icon
         
-        ![controller_wireless_icon.png](https://github.com/FlorianKempenich/SteamDeckScripts/blob/main/icon.png)
+        ![controller_wireless_icon.png](https://github.com/FlorianKempenich/Deckpad/blob/main/icon.png)
         
     
 10. Launch it once
