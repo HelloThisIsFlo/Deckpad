@@ -17,7 +17,6 @@ Welcome Screen              |  Running Screen
 ![](https://github.com/FlorianKempenich/Deckpad/raw/main/doc/welcome_screen.jpg)  |  ![](https://github.com/FlorianKempenich/Deckpad/raw/main/doc/running_screen.jpg)
 
 
----
 ## Setup Instructions
 ### On Steam Deck
 
