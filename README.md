@@ -18,6 +18,13 @@ Welcome Screen              |  Running Screen
 
 
 ## Setup Instructions
+> ⚠️ If you quit Deckpad without pressing on the screen, it won't clean up and will prevent sleep and brightness changes!
+> - The easiest way way to fix it is to run Deckpad again, and quit it by clicking on the target in the middle of the screen  
+> - Alternatively, you can restore the SteamDeck to its original state by running these 2 commands:
+>   ```bash
+>   sudo chmod 666 /sys/class/backlight/amdgpu_bl0/brightness
+>   sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target >/dev/null 2>&1
+>   ```
 ### On Steam Deck
 
 1. Set a `sudo` password: [SteamDeckTips Tutorial](https://steamdecktips.com/blog/how-to-set-a-password-for-your-steam-deck-user-in-desktop-mode)
@@ -46,7 +53,7 @@ Welcome Screen              |  Running Screen
     | --- | --- |
     | Target | `env` |
     | Start | `"/home/deck/Deckpad"` (don’t remove " symbols) |
-    | Launch Opts | `-u LD_PRELOAD konsole -e “./deckpad.sh”` |
+    | Launch Opts | `-u LD_PRELOAD konsole -e ./deckpad.sh` |
     - and this icon
         
         ![controller_wireless_icon.png](https://github.com/FlorianKempenich/Deckpad/blob/main/icon.png)
