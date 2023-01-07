@@ -33,8 +33,6 @@ function show_prompt {
 }
 
 function block_until_press_on_target {
-    export DISPLAY=:1
-
     TARGET_X_MIN=30500
     TARGET_Y_MIN=29000
     TARGET_X_MAX=33000
