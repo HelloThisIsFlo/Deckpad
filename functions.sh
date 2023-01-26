@@ -95,8 +95,8 @@ function start_virtualhere {
 
 function stop_virtualhere {
     kill -s SIGINT $(cat ./virtualhere_pid)
+    wait $(cat ./virtualhere_pid)
     rm ./virtualhere_pid
-    wait
 }
 
 function start_prompt {

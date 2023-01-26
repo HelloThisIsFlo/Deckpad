@@ -18,10 +18,11 @@ function run_as_root() {
     # Quit
     run_prompt_stop
     quit_prompt &
+    quit_prompt_pid=$!
     restore_brightness
     reenable_sleep
     stop_virtualhere
-    wait
+    wait quit_prompt_pid
 }
 
 source ./functions.sh
