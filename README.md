@@ -34,6 +34,10 @@ Welcome Screen              |  Running Screen
 
 
 ## Setup Instructions
+> **Update Instructions**
+> ```
+> cd ~/Deckpad/ && git pull
+> ```
 ### On Steam Deck
 
 1. Set a `sudo` password: [SteamDeckTips Tutorial](https://steamdecktips.com/blog/how-to-set-a-password-for-your-steam-deck-user-in-desktop-mode)
