@@ -33,10 +33,10 @@ function show_prompt {
 }
 
 function block_until_press_on_target {
-    TARGET_X_MIN=30500
-    TARGET_Y_MIN=29000
-    TARGET_X_MAX=33000
-    TARGET_Y_MAX=38000
+    TARGET_X_MIN=26500
+    TARGET_Y_MIN=25000
+    TARGET_X_MAX=37000
+    TARGET_Y_MAX=42000
 
     TOUCHSCREEN_ID=$(xinput --list 2>/dev/null | grep -i -m 1 'touch' | grep -o 'id=[0-9]\+' | grep -o '[0-9]\+')
     touch_x=0
