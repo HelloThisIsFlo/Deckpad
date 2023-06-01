@@ -6,6 +6,18 @@ set -o pipefail
 function run_as_root() {
     source ./functions.sh
 
+    if ! command -v figlet &>/dev/null || ! command -v xinput &>/dev/null; then
+        echo "Make sure to run '~/Deckpad/initialize_after_os_update.sh' after updating SteamOS"
+        echo "Make sure to run '~/Deckpad/initialize_after_os_update.sh' after updating SteamOS"
+        echo "Make sure to run '~/Deckpad/initialize_after_os_update.sh' after updating SteamOS"
+        echo "Make sure to run '~/Deckpad/initialize_after_os_update.sh' after updating SteamOS"
+        echo "Make sure to run '~/Deckpad/initialize_after_os_update.sh' after updating SteamOS"
+        echo "Make sure to run '~/Deckpad/initialize_after_os_update.sh' after updating SteamOS"
+        echo "Make sure to run '~/Deckpad/initialize_after_os_update.sh' after updating SteamOS"
+        sleep 5
+        exit 1
+    fi
+
     # Start
     set_brightness_to_minimum
     disable_sleep

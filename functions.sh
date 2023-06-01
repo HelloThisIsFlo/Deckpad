@@ -18,18 +18,10 @@ function show_prompt {
     else
         style=$2
     fi
-    if command -v figlet &>/dev/null; then
-        figlet -c -w 180 -f $style -k -- "$prompt"
-        echo ""
-        echo ""
-        echo ""
-    else
-        echo "-----------------------------------"
-        echo ""
-        echo "         $prompt"
-        echo ""
-        echo "-----------------------------------"
-    fi
+    figlet -c -w 180 -f $style -k -- "$prompt"
+    echo ""
+    echo ""
+    echo ""
 }
 
 function block_until_press_on_target {

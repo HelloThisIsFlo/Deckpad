@@ -2,6 +2,11 @@
 
 > ⚠️ **WARNING:** This is a mostly stable prototype, but it is very much alpha!
 
+> ⚠️ After every Steam OS update, make sure to run
+> ```
+> ~/Deckpad/install_pacman_packages.sh
+> ```
+
 > ⚠️ After updating to Steam OS 3.4 you need to update the `Launch Options`   
 > You need to add `--fullscreen`
 > - Old: `-u LD_PRELOAD konsole --fullscreen -e ./deckpad.sh`
