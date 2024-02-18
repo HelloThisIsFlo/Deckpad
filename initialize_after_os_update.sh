@@ -25,7 +25,6 @@ echo "| Press Enter to continue... |"
 echo "------------------------------"
 read
 echo ""
-exit 0
 
 # Update archlinux-keyring
 # See: https://wiki.archlinux.org/title/Pacman/Package_signing#Upgrade_system_regularly
