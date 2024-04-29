@@ -35,7 +35,7 @@ Once setup, all you have to do is to launch **Deckpad**, enter your password, an
 
 Welcome Screen              |  Running Screen
 :-------------------------:|:-------------------------:
-![](https://github.com/FlorianKempenich/Deckpad/raw/main/doc/welcome_screen.jpg)  |  ![](https://github.com/FlorianKempenich/Deckpad/raw/main/doc/running_screen.jpg)
+![](https://github.com/HelloThisIsFlo/Deckpad/raw/main/doc/welcome_screen.jpg)  |  ![](https://github.com/HelloThisIsFlo/Deckpad/raw/main/doc/running_screen.jpg)
 
 
 ## Setup Instructions
@@ -51,7 +51,7 @@ Welcome Screen              |  Running Screen
     2. Clone repo
         
         ```bash
-        cd ~ && git clone https://github.com/FlorianKempenich/Deckpad.git
+        cd ~ && git clone https://github.com/HelloThisIsFlo/Deckpad.git
         ```
         
     3. Run `./initialize_after_os_update.sh`
@@ -79,7 +79,7 @@ Welcome Screen              |  Running Screen
         | Launch Opts | `-u LD_PRELOAD konsole --fullscreen -e ./deckpad.sh` |
         - and this icon
             
-            ![controller_wireless_icon.png](https://github.com/FlorianKempenich/Deckpad/blob/main/icon.png)
+            ![controller_wireless_icon.png](https://github.com/HelloThisIsFlo/Deckpad/blob/main/icon.png)
             
         
 3. Enable touchscreen <- **Do this in Game Mode**  
