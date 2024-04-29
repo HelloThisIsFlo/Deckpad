@@ -7,11 +7,6 @@
 > ~/Deckpad/install_pacman_packages.sh
 > ```
 
-> ⚠️ After updating to Steam OS 3.4 you need to update the `Launch Options`   
-> You need to add `--fullscreen`
-> - Old: `-u LD_PRELOAD konsole --fullscreen -e ./deckpad.sh`
-> - New: `-u LD_PRELOAD konsole -e ./deckpad.sh`
-
 > ⚠️ **WARNING:** If you quit Deckpad without pressing on the screen (or if it doesn't work on your device), it won't clean up and will prevent sleep and brightness changes!
 > - The easiest way way to fix it is to run Deckpad again, and quit it by clicking on the target in the middle of the screen  
 > - Alternatively, you can restore the SteamDeck to its original state by running these 2 commands:
