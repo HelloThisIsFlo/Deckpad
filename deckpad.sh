@@ -21,6 +21,7 @@ function run_as_root() {
     # Start
     set_brightness_to_minimum
     disable_sleep
+    find_controller
     start_virtualhere
 
     # Run - Block until Tap on screen
@@ -34,6 +35,7 @@ function run_as_root() {
     restore_brightness
     reenable_sleep
     stop_virtualhere
+    reset_controller
     wait quit_prompt_pid
 }
 
