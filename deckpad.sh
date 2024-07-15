@@ -36,7 +36,12 @@ function run_as_root() {
     reenable_sleep
     stop_virtualhere
     reset_controller
+<<<<<<< HEAD
     wait quit_prompt_pid
+=======
+    wait $quit_prompt_pid
+    trap - EXIT
+>>>>>>> 9d44ff1 (Small bugfix)
 }
 
 source ./functions.sh
