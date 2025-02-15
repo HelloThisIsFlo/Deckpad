@@ -141,3 +141,22 @@ function run_prompt_stop {
     kill -s SIGKILL $(cat ./run_prompt_pid)
     rm ./run_prompt_pid
 }
+function find_controller {
+    # Locate the Built-in Steam controller by USB Vendor id (28de) and USB Product id (1205)
+    # These ids are different from the steam controller wireless dongle and the wired controller
+
+    # Fills variable steam_controller with directory of matching device
+    read -r -d '' steam_controller < <(find /sys/devices -path "*usb*" -type d -execdir sh -c 'grep --no-messages --silent "28de" "$0/idVendor" && grep --no-messages --silent "1205" "$0/idProduct"' '{}' \; -print0 2>/dev/null)
+    # Extract PCI bus id for the usb controller from the device path
+    steam_controller="${steam_controller%/*/*}"
+    steam_controller="${steam_controller##*/}"
+    echo "$steam_controller" >./controller_id
+}
+
+function reset_controller {
+    xhci_driver_path="/sys/bus/pci/drivers/xhci_hcd"
+    # Using both unbind/bind seems to be more reliable than just bind
+    cat "./controller_id" >"$xhci_driver_path/unbind"
+    cat "./controller_id" >"$xhci_driver_path/bind"
+    rm ./controller_id
+}
