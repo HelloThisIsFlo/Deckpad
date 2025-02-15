@@ -4,7 +4,7 @@
 
 > ⚠️ After every Steam OS update, make sure to run
 > ```
-> ~/Deckpad/install_pacman_packages.sh
+> ~/Deckpad/initialize_after_os_update.sh
 > ```
 
 > ⚠️ **WARNING:** If you quit Deckpad without pressing on the screen (or if it doesn't work on your device), it won't clean up and will prevent sleep and brightness changes!
