@@ -1,6 +1,11 @@
 # Deckpad
 
-> ⚠️ **WARNING:** This is a mostly stable prototype, but it is very much alpha!
+> ❌ **This project is broken at the moment, see [#23](https://github.com/HelloThisIsFlo/Deckpad/issues/23) for more details**  
+> ❌ **You can still try it out, maybe it works for you, but no guarantees...**
+---
+
+> ⚠️ **WARNING:** This is a alpha prototype!  
+> It may work, it may break. Install at your own risks and make sure you understand what you are doing.
 
 > ⚠️ After every Steam OS update, make sure to run
 > ```
